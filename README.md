@@ -7,5 +7,5 @@
 
 
 # Reference
-- [Spring Documents](https://spring.io/projects/spring-boot)
+- [Spring Documentation](https://spring.io/projects/spring-boot)
 
