@@ -1,4 +1,4 @@
-# My Spring Life
+# Spring
 
 1. Spring
 2. Spring MVC
