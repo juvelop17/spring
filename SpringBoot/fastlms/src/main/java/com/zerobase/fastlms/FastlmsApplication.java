@@ -12,10 +12,10 @@ public class FastlmsApplication {
     /*
     @PostConstruct
     public void init() {
-    
+
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
         System.out.println("Spring boot application running in UTC timezone :" + new Date());
-        
+
     }*/
     
 
