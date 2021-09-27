@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>관리자 화면 </title>
+    <style>
+        .detail table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .detail table th, .detail table td {
+            border:solid 1px #000;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>이메일 템플릿 관리 - 이메일 템플릿 상세 정보</h1>
+    <div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
+
+    <div class="detail" >
+        <table>
+            <tbody>
+                <tr>
+                    <th>메일 템플릿 Key</th>
+                    <td>
+                        <p th:text="${mailTemplate.mailTemplateKey}"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>템플릿 제목</th>
+                    <td>
+                        <p th:text="${mailTemplate.title}"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>템플릿 내용</th>
+                    <td>
+                        <p th:text="${mailTemplate.content}"></p>
+                    </td>
+                </tr>
+<!--                <tr>-->
+<!--                    <th>회원 상태</th>-->
+<!--                    <td>-->
+<!--                        <div>-->
+<!--                            <form method="post" action="/admin/member/status.do">-->
+<!--                                <input th:value="${member.userId}" type="hidden" name="userId"/>-->
+<!--                                <select name="userStatus">-->
+<!--                                    <option value="REQ">가입승인중</option>-->
+<!--                                    <option value="ING">정상이용중</option>-->
+<!--                                    <option value="STOP">정지중</option>-->
+<!--                                </select>-->
+<!--                                <button type="submit">상태 변경</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </td>-->
+<!--                </tr>-->
+            </tbody>
+        </table>
+
+        <div>
+            <a href="list.do"> 목록 </a>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

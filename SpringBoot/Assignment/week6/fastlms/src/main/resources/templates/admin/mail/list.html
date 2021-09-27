@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>관리자 화면 </title>
+    <style>
+        .list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .list table th, .list table td {
+            border: solid 1px #000;
+        }
+
+        .search-form {
+            position: relative;
+            padding: 5px 0 10px 0;
+            text-align: right;
+        }
+
+        .search-form .total-count {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 20px;
+            float: left;
+        }
+
+        .pager {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pager a.on {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>메일 템플릿 관리</h1>
+<div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
+
+<div class="list">
+    <div class="buttons">
+        <a href="/admin/mail/add.do"> 메일 템플릿 등록 </a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>NO</th>
+            <th>
+                메일 템플릿 KEY
+            </th>
+            <th>
+                메일 제목
+            </th>
+            <th>
+                비고
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="x : ${list}">
+            <td th:text="${x.mailTemplateId}">1</td>
+            <td>
+                <a th:text="${x.getMailTemplateKey}"
+                   th:href="${'detail.do?mailTemplateKey=' + x.getMailTemplateKey}">
+                    mailKey</a>
+            </td>
+            <td th:text="${x.title}">메일 제목</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+<!--    <div th:text="${list}"></div>-->
+</div>
+
+
+</body>
+</html>
