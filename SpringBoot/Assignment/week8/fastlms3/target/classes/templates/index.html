@@ -9,7 +9,22 @@
     <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
 
     <div>
-        <img src="/files/2021/09/05/6e5170576b0c4c29879e5334dfccab2d.png"/>
+        <img src="/files/sample_img/sample1.png"/>
+    </div>
+
+    <div>
+        <img src="/files/2021/10/03/ede7bb1c960744ecb62ad26abee0cf1d.png"/>
+    </div>
+
+    <div th:each="banner : ${bannerList}">
+        <p th:if="${banner.isFrontDisplay()}">
+            <a th:if="${banner.isNewWindow()}" th:href="${banner.getLinkURL()}" th:target="_blank">
+                <img th:src="${banner.getUrlFilename()}"/>
+            </a>
+            <a th:unless="${banner.isNewWindow()}" th:href="${banner.getLinkURL()}">
+                <img th:src="${banner.getUrlFilename()}"/>
+            </a>
+        </p>
     </div>
 
 </body>

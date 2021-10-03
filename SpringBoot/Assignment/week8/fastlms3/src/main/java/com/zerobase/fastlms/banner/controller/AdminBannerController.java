@@ -121,32 +121,32 @@ public class AdminBannerController extends BaseController {
     public String addSubmit(Model model, HttpServletRequest request
                             , MultipartFile file , BannerInput parameter) {
 
-//        String saveFilename = "";
-//        String urlFilename = "";
-//
-//        if (file != null) {
-//            String originalFilename = file.getOriginalFilename();
-//
-//            String baseLocalPath = "/Users/kyutaepark/Documents/sources/zerobase/fastlms/files";
-//            String baseUrlPath = "/files";
-//
-//            String[] arrFilename = getNewSaveFile(baseLocalPath, baseUrlPath, originalFilename);
-//
-//            saveFilename = arrFilename[0];
-//            urlFilename = arrFilename[1];
-//
-//            try {
-//                File newFile = new File(saveFilename);
-//                FileCopyUtils.copy(file.getInputStream(), new FileOutputStream(newFile));
-//            } catch (IOException e) {
-//                log.info("############################ - 1");
-//                log.info(e.getMessage());
-//            }
-//        }
-//
-//        parameter.setFilename(saveFilename);
-//        parameter.setUrlFilename(urlFilename);
-        
+        String saveFilename = "";
+        String urlFilename = "";
+
+        if (file != null && !file.getOriginalFilename().equals("")) {
+            String originalFilename = file.getOriginalFilename();
+
+            String baseLocalPath = "/Users/junho/IdeaProjects/spring/SpringBoot/Assignment/week8/fastlms3/files";
+            String baseUrlPath = "/files";
+
+            String[] arrFilename = getNewSaveFile(baseLocalPath, baseUrlPath, originalFilename);
+
+            saveFilename = arrFilename[0];
+            urlFilename = arrFilename[1];
+
+            try {
+                File newFile = new File(saveFilename);
+                FileCopyUtils.copy(file.getInputStream(), new FileOutputStream(newFile));
+            } catch (IOException e) {
+                log.info("############################ - 1");
+                log.info(e.getMessage());
+            }
+        }
+
+        parameter.setFilename(saveFilename);
+        parameter.setUrlFilename(urlFilename);
+
         boolean editMode = request.getRequestURI().contains("/edit.do");
         
         if (editMode) {
@@ -157,7 +157,6 @@ public class AdminBannerController extends BaseController {
                 model.addAttribute("message", "배너 정보가 존재하지 않습니다.");
                 return "common/error";
             }
-            
             boolean result = bannerService.set(parameter);
             
         } else {
