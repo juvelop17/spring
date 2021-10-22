@@ -1,4 +1,4 @@
-package com.example.zerobase.web.exception;
+package com.example.zerobase.web.advice;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

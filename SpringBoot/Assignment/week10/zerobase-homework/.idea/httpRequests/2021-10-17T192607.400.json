@@ -1,0 +1,6 @@
+{
+  "timestamp": "2021-10-17T10:26:07.133+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/v1/api/course/"
+}
