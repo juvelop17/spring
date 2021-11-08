@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항 상세 페이지</title>
+    <style>
+        span.price {
+            text-decoration: line-through;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>공지사항 상세 정보 </h1>
+    <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+
+    <div>
+        <h2>제목: <span th:text="${detail.title}">공지사항</span></h2>
+        <div th:utext="${detail.contents}">
+        </div>
+
+        <div>
+            <input type="hidden" name="id" th:value="${detail.id}"/>
+            <a href="/notice">공지사항 목록</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>공지사항</title>
+    <style>
+        span.price {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>공지사항</h1>
+    <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+
+
+    <div>
+        <a href="?">전체 (<span th:text="${noticeTotalCount}">0</span>)</a>
+    </div>
+
+    <ul>
+        <li th:each="x : ${list}">
+            <div>
+                <a th:href="'/notice/' + ${x.id}">
+                    <h3 th:text="${x.title}">제목</h3>
+                </a>
+                <div>
+                    <p th:text="${x.regDt}">등록일</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+
+</body>
+</html>

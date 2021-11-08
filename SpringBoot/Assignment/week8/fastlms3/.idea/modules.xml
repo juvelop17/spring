@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fastlms.iml" filepath="$PROJECT_DIR$/fastlms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/budongsan.iml" filepath="$PROJECT_DIR$/budongsan.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,52 @@
+package com.example.budongsan.notice.service;
+
+import com.example.budongsan.notice.dto.NoticeDto;
+import com.example.budongsan.notice.model.NoticeInput;
+import com.example.budongsan.notice.model.NoticeParam;
+
+import java.util.List;
+
+public interface NoticeService {
+
+    /**
+     * 공지사항 등록
+     */
+    boolean add(NoticeInput parameter);
+    
+    /**
+     * 공지사항 정보수정
+     */
+    boolean set(NoticeInput parameter);
+    
+    /**
+     * 공지사항 목록
+     */
+    List<NoticeDto> list(NoticeParam parameter);
+    
+    /**
+     * 공지사항 상세정보
+     */
+    NoticeDto getById(long id);
+    
+    /**
+     * 공지사항 내용 삭제
+     */
+    boolean del(String idList);
+    
+    /**
+     * 프론트 공지사항 목록
+     */
+    List<NoticeDto> frontList(NoticeParam parameter);
+    
+    /**
+     * 프론트 공지사항 상세 정보
+     */
+    NoticeDto frontDetail(long id);
+    
+
+    /**
+     * 전체 공지사항 목록
+     */
+    List<NoticeDto> listAll();
+    
+}
