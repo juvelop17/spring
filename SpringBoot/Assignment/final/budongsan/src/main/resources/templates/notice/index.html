@@ -4,33 +4,101 @@
     <meta charset="UTF-8">
     <title>공지사항</title>
     <style>
-        span.price {
-            text-decoration: line-through;
+        .list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .list table th, .list table td {
+            border:solid 1px #000;
+        }
+
+        p.nothing {
+            text-align: center;
+            padding: 100px;
+        }
+
+        .list .buttons {
+            position: relative;
+            padding: 10px 0;
+        }
+
+        .list  .buttons a,.list  .buttons button {
+            border-width: 0;
+            background-color: transparent;
+            text-decoration: underline;
+            font-size: 14px;
+            line-height: 20px;
+            height: 20px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .list .buttons .total-count {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .pager {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pager a.on {
+            font-weight: bold;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>공지사항</h1>
     <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+    <h1>공지사항</h1>
 
 
-    <div>
-        <a href="?">전체 (<span th:text="${noticeTotalCount}">0</span>)</a>
-    </div>
+<!--    <div>-->
+<!--        <a href="?">전체 (<span th:text="${noticeTotalCount}">0</span>)</a>-->
+<!--    </div>-->
 
-    <ul>
-        <li th:each="x : ${list}">
-            <div>
-                <a th:href="'/notice/' + ${x.id}">
-                    <h3 th:text="${x.title}">제목</h3>
-                </a>
-                <div>
+<!--    <ul>-->
+<!--        <li th:each="x : ${list}">-->
+<!--            <div>-->
+<!--                <a th:href="'/notice/' + ${x.id}">-->
+<!--                    <h3 th:text="${x.title}">제목</h3>-->
+<!--                </a>-->
+<!--                <div>-->
+<!--                    <p th:text="${x.regDt}">등록일</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </li>-->
+<!--    </ul>-->
+
+    <div class="list">
+        <table>
+            <thead>
+            <tr>
+                <th> NO </th>
+                <th>
+                    제목
+                </th>
+                <th>
+                    등록일
+                </th>
+            </tr>
+            </thead>
+            <tbody id="dataLIst">
+            <tr th:each="x : ${list}">
+                <td th:text="${x.seq}">1</td>
+                <td>
+                    <a th:href="'/notice/' + ${x.id}">
+                        <h3 th:text="${x.title}">제목</h3>
+                    </a>
+                </td>
+                <td>
                     <p th:text="${x.regDt}">등록일</p>
-                </div>
-            </div>
-        </li>
-    </ul>
-
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
 
 </body>

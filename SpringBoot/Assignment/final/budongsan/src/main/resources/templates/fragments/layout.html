@@ -2,21 +2,19 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>fastlms</title>
+    <title>부동산광고시장감시센터</title>
 </head>
 <body>
-
     <div th:fragment="fragment-body-menu">
+        <h1>부동산광고시장감시센터</h1>
         <div>
             <a href="/">홈</a>
             |
             <a href="/notice">공지사항</a>
             |
-            <a href="/report">신고</a>
+            <a href="/report/list">신고</a>
             |
             <a href="/member/info">회원 정보</a>
-            |
-            <a href="/member/register">회원 가입</a>
             |
             <a href="/member/login">로그인</a>
             |
@@ -26,6 +24,7 @@
     </div>
 
     <div th:fragment="fragment-admin-body-menu">
+        <h1>부동산광고시장감시센터 관리자</h1>
         <div>
             <a href="/admin/main.do"> 관리자 홈 </a>
             |

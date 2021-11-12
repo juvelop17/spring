@@ -5,88 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3fbd390-b2c4-4620-a917-06fd0c801423" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/BudongsanApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/admin/controller/AdminMainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/admin/controller/AdminMemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/admin/controller/AdminNoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/admin/model/AdminMemberInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/configuration/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/configuration/UserAuthenticationFailureHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/dto/MemberDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/entity/MemberCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/exception/MemberStopUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/mapper/MemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/model/MemberInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/model/MemberParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/member/service/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/model/CommonParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/model/ServiceResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/controller/NoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/dto/NoticeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/entity/Notice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/mapper/NoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/model/NoticeInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/model/NoticeParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/repository/NoticeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/service/NoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/service/NoticeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/util/PageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/util/PasswordUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/NoticeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/member/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/member/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/denied.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member/register_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/member/withdraw.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/notice/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/notice/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/budongsan/BudongsanApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fastlms-답안지/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week12/zerobase-homework_12_week/src/main/java/com/example/demo/web/infra/UserArgumentResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week12/zerobase-homework_12_week/src/main/java/com/example/demo/web/infra/UserArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/admin/controller/AdminReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/dto/ReportDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/entity/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/mapper/ReportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/model/ReportInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/model/ReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/repository/ReportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/budongsan/report/service/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/ReportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/report/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/report/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/report/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/report/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/NoticeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/NoticeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/notice/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/register_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/register_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/member/withdraw.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/member/withdraw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/notice/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/notice/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/notice/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/notice/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../week7/fastlms" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/fastlms" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/.idea/artifacts/fastlms_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/artifacts/fastlms_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/.idea/artifacts/fastlms_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/artifacts/fastlms_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/fastlms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/budongsan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/banner/entity/Banner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/banner/entity/Banner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week8/fastlms3/src/main/java/com/zerobase/fastlms/member/repository/MemberRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +50,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -141,8 +96,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/admin" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example/budongsan/report" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/admin/report" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -153,21 +109,21 @@
       <recent name="com.example.budongsan.member.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/admin" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/budongsan/report" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/notice" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/admin/report" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/report" />
       <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/example/budongsan/notice/service" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/budongsan/report" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates/common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.budongsan.admin.controller" />
+      <recent name="com.example.budongsan.report.controller" />
       <recent name="com.example.budongsan.notice.repository" />
       <recent name="com.example.budongsan.util" />
       <recent name="com.example.budongsan.model" />
-      <recent name="com.example.budongsan.member.exception" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BudongsanApplication">
@@ -201,6 +157,8 @@
       <updated>1636355742701</updated>
       <workItem from="1636355745089" duration="3943000" />
       <workItem from="1636359738832" duration="14833000" />
+      <workItem from="1636376483794" duration="269000" />
+      <workItem from="1636709207978" duration="9611000" />
     </task>
     <servers />
   </component>

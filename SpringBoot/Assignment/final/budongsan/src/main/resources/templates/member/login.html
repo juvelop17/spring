@@ -5,10 +5,9 @@
     <title>회원 로그인</title>
 </head>
 <body>
-
-    <h1>회원 로그인</h1>
-    <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
-
+<div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+<div>
+    <h2>회원 로그인</h2>
     <form method="post" action="/member/login">
 
         <div>
@@ -18,14 +17,13 @@
             <input type="password" name="password" placeholder="비밀번호 입력" required/>
         </div>
         <div>
-            <button type="submit"> 로그인 </button>
+            <button type="submit"> 로그인</button>
         </div>
-
     </form>
 
     <hr/>
-
-
+</div>
+<a href="/member/register">회원 가입</a>
 
 
 </body>

@@ -96,14 +96,14 @@
     </script>
 </head>
 <body>
-    <div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
-    <h1>공지사항 관리</h1>
+    <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+    <h1>신고 관리</h1>
 
     <div class="list">
         <div class="buttons">
             <p class="total-count">전체 <span th:text="${totalCount}"></span>개</p>
 
-            <a href="/admin/notice/add.do"> 공지사항 등록 </a>
+            <a href="/report/add"> 신고 등록 </a>
             <button id="deleteButton" type="button"> 선택 삭제 </button>
         </div>
 
@@ -131,7 +131,7 @@
                 <td th:text="${x.seq}">1</td>
                 <td>
                     <p>
-                        <a th:href="'edit.do?id=' + ${x.id}" th:text="${x.title}">제목</a>
+                        <a th:href="'edit?id=' + ${x.id}" th:text="${x.title}">제목</a>
                     </p>
                 </td>
                 <td>
@@ -145,7 +145,7 @@
         </div>
     </div>
 
-<form name="deleteForm" method="post" action="/admin/notice/delete.do">
+<form name="deleteForm" method="post" action="/report/delete">
     <input type="hidden" name="idList"/>
 </form>
 

@@ -46,8 +46,8 @@
     </script>
 </head>
 <body>
-<div th:replace="/fragments/layout.html :: fragment-admin-body-menu"></div>
-<h1>공지사항 관리 - 공지사항 등록</h1>
+<div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+<h1>신고 관리 - 신고 등록</h1>
 
 <div class="detail">
 
@@ -78,9 +78,9 @@
         </table>
 
         <div class="buttons">
-            <button th:if="${editMode}" type="submit"> 공지사항 수정 하기 </button>
-            <button th:if="${!editMode}" type="submit"> 공지사항 등록 하기 </button>
-            <a href="/admin/notice/list.do"> 목록 이동 </a>
+            <button th:if="${editMode}" type="submit"> 신고 수정 하기 </button>
+            <button th:if="${!editMode}" type="submit"> 신고 등록 하기 </button>
+            <a href="/report/list"> 목록 </a>
         </div>
 
     </form>

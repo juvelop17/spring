@@ -10,23 +10,30 @@
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>공지사항 상세 정보 </h1>
-    <div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+<div th:replace="/fragments/layout.html :: fragment-body-menu"></div>
+<h1>공지사항</h1>
 
-    <div>
-        <h2>제목: <span th:text="${detail.title}">공지사항</span></h2>
-        <div th:utext="${detail.contents}">
-        </div>
+<div>
+    <p>
+    <h2><span th:text="${detail.title}">공지사항</span></h2>
+    </p>
 
-        <div>
-            <input type="hidden" name="id" th:value="${detail.id}"/>
-            <a href="/notice">공지사항 목록</a>
-        </div>
-
+    <p>
+    <div th:utext="${detail.contents}"></p>
     </div>
+
+    <p>
+    <div>
+        <input type="hidden" name="id" th:value="${detail.id}"/>
+        <a href="/notice">목록</a>
+    </div>
+    </p>
+
+</div>
 
 
 </body>
